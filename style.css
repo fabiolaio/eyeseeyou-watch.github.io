@@ -31,7 +31,8 @@ main {
 
 #surveillance-feed {
     width: 100%; /* Full width to maximize space for the video */
-    max-width: 315px; /* You can set a max-width to prevent it from becoming too large on very wide screens */
+    height: 530px;
+    width: 315px; /* You can set a max-width to prevent it from becoming too large on very wide screens */
     margin: 20px auto; /* Center it with automatic horizontal margins */
     background-color: #222;
     position: relative; /* Relative positioning for the absolute .video-container */
