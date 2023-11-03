@@ -30,16 +30,13 @@ main {
 }
 
 #surveillance-feed {
-    width: 80%;
-    height: 300px;
-    margin-bottom: 20px;
+    width: 100%; /* Full width to maximize space for the video */
+    max-width: 315px; /* You can set a max-width to prevent it from becoming too large on very wide screens */
+    margin: 20px auto; /* Center it with automatic horizontal margins */
     background-color: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
+    position: relative; /* Relative positioning for the absolute .video-container */
 }
+
 
 .redacted {
     background-color: #f00;
@@ -82,15 +79,15 @@ footer {
 
 .video-container {
     position: relative;
-    width: 100%;
+    width: 100%; /* This will make the video container take full width of its parent */
     height: 0;
-    padding-bottom: 56.25%; /* Aspect ratio */
+    padding-bottom: 56.25%; /* This maintains the 16:9 aspect ratio */
 }
 
 .video-container iframe {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* This will make the iframe take the full width of the .video-container */
+    height: 100%; /* This will make the iframe take the full height of the .video-container */
     left: 0;
     top: 0;
 }
