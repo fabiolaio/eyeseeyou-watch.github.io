@@ -65,7 +65,7 @@ footer {
 }
 
 .glitch {
-    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+    box-shadow: 0 0 10px rgb(255, 0, 157), 0 0 20px rgb(255, 0, 157), 0 0 40px rgb(255, 0, 157), 0 0 80px rgb(255, 0, 157);
     animation: glitch-animation 0.5s infinite;
 }
 
